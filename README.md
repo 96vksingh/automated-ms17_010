@@ -1,5 +1,5 @@
 # automated-ms17_010
-Small autmoated code for ms17_010 exploit .
+Small automated code for ms17_010 exploit .
 
 The code works on all Kali Linux OS .
 
