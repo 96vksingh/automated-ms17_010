@@ -1,0 +1,6 @@
+spool /root/automate/data/msf.txt
+use auxiliary/scanner/smb/smb_ms17_010
+set rhosts file:/root/automate/data/openport.txt
+run
+exit
+spool off
